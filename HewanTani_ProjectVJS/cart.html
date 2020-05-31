@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Shopping Cart</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--Font CDN-->
+  <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+  <!--Slick Slider-->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <!--Custom Stylesheet-->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/stylecart.css">
+  <link rel="stylesheet" href="./css/form.css">
+
+  <style>
+    h1 {
+      font-family: 'Acme';
+      font-size: 50px;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 col-12">
+
+        </div>
+        <div class="col-md-4 col-12 text-center">
+          <h1 class="my-md-3-site-title">Shopping Cart </h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="#about">Ini Apa</a>
+      <a href="#contact">Kontak</a>
+
+      <li class="cart">
+        <a class="active" href="cart.html">
+          <ion-icon name="basket"></ion-icon> Cart <span>0</span>
+        </a>
+      </li>
+
+    </div>
+
+  </header>
+
+  <div class="products-container">
+    <div class="product-header">
+      <h5 class="product-title">PRODUCT</h5>
+      <h5 class="price">PRICE</h5>
+      <h5 class="quantity">QUANTITY</h5>
+      <h5 class="total">TOTAL</h5>
+    </div>
+    <div class="products">
+
+    </div>
+  </div>
+
+  <!-- Form -->
+
+  <div class="testbox">
+    <form>
+      <h1>Formulir Pengiriman</h1>
+      <div class="item">
+        <p>Nama</p>
+        <div>
+          <input type="text" id="fname" name="name" placeholder="Arip Sudrajat" />
+        </div>
+      </div>
+      <div class="item">
+        <p>Jenis Kelamin</p>
+        <div>
+          <input type="text" id="fgender" name="gender" placeholder="Arip Sudrajat" />
+        </div>
+      </div>
+      <div class="item">
+        <p>Email</p>
+        <input type="email" id="email" name="email" placeholder="Arip@gmail.com" />
+      </div><br>
+      <div class="item">
+        <p>Alamat</p>
+        <textarea name="address" id="adr" rows="5"></textarea>
+      </div>
+
+      <div class="item">
+        <p>Kontak</p>
+        <input type="text" id="kontak" name="Kontak" placeholder="WA/IG/Line *Prioritas dari kiri" />
+      </div>
+      <div class="item">
+        <p>Komentar</p>
+        <textarea id="komen" rows="8"></textarea>
+      </div>
+
+      <div class="btn-block">
+        <button type="button" value="Beli" href="/">Kirim</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- /Form -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="/js/shopcart.js"></script>
+  <script src="/js/form.js"></script>
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+</body>
+
+</html>
